@@ -22,6 +22,18 @@ Tarkov Pilot Sync is a Chrome extension that enhances your Escape from Tarkov pl
 - 📍 **Share map pins** with CTRL+Click
 - 📋 **Track quests** together with teammates
 - 🔔 **Get notifications** when players join, leave, or change maps
+- 📸 **Screenshot Sync** - Automatically detect in-game screenshots and sync your position to tarkov-market.com
+
+### 📸 Screenshot Sync Feature
+
+The Screenshot Sync feature monitors your Tarkov screenshots folder and automatically sends your in-game position to tarkov-market.com:
+
+1. **Connect your Screenshots folder** in the extension settings
+2. **Get your Hook-ID** from [tarkov-market.com](https://tarkov-market.com/pilot) (Desktop script)
+3. **Take a screenshot in-game** (default: PrintScreen)
+4. **Your position appears on the map** within seconds! (Based on your settings and tarkov-market reaction time)
+
+> 💡 **Tip:** Grant permanent folder access ("Allow on every visit") to avoid re-authorizing after browser restarts.
 
 Perfect for coordinating raid strategies with your squad!
 
@@ -144,6 +156,32 @@ Please include:
 1. Check if "Enable Pins" is turned on in settings
 2. Verify you're using CTRL+Click to place pins
 3. Check "Same Map Only" setting
+
+</details>
+
+<details>
+<summary><b>Screenshot Sync not working</b></summary>
+
+1. **Check the status indicator** on the map (bottom left)
+   - 🟢 Green = Connected and working
+   - 🟠 Orange = Hook-ID missing or folder not connected
+   - 🔴 Red = Error occurred
+
+2. **Verify your Hook-ID**
+   - Get it from [tarkov-market.com](https://tarkov-market.com) → Account → Settings
+   - Must be a valid UUID format
+
+3. **Reconnect the folder**
+   - Click the status indicator on the map, or
+   - Go to extension settings → Screenshot Sync → Select folder
+
+4. **Grant permanent permission**
+   - Click "Allow permanently" in settings
+   - Select "Allow on every visit" in the browser dialog
+
+5. **Check the screenshot format**
+   - Only `.png` files are detected
+   - Filename must match Tarkov's format (contains timestamp)
 
 </details>
 
