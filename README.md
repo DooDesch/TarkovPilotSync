@@ -178,7 +178,7 @@ Please include:
    - 🔴 Red = Error occurred
 
 2. **Verify your connection mode**
-   - **Desktop App mode:** Ensure the Tarkov Pilot Desktop App is running
+   - **Desktop App mode:** Verify your Mode is set to "Desktop App" on [tarkov-market.com/pilot](https://tarkov-market.com/pilot)
    - **Hook ID mode:** Verify your Hook-ID from [tarkov-market.com/pilot](https://tarkov-market.com/pilot) (must be a valid UUID format)
 
 3. **Reconnect the folder**
