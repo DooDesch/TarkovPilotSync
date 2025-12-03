@@ -26,12 +26,22 @@ Tarkov Pilot Sync is a Chrome extension that enhances your Escape from Tarkov pl
 
 ### 📸 Screenshot Sync Feature
 
-The Screenshot Sync feature monitors your Tarkov screenshots folder and automatically sends your in-game position to tarkov-market.com:
+The Screenshot Sync feature monitors your Tarkov screenshots folder and automatically sends your in-game position to tarkov-market.com.
 
-1. **Connect your Screenshots folder** in the extension settings
-2. **Get your Hook-ID** from [tarkov-market.com](https://tarkov-market.com/pilot) (Desktop script)
+#### Connection Modes
+
+**Option A: Desktop App (Recommended)**
+1. Download and run the [Tarkov Pilot Desktop App](https://tarkov-market.com/pilot)
+2. **Connect your Screenshots folder** in the extension settings
 3. **Take a screenshot in-game** (default: PrintScreen)
-4. **Your position appears on the map** within seconds! (Based on your settings and tarkov-market reaction time)
+4. Your position appears on the map within milliseconds!
+
+**Option B: Hook ID (Manual Setup)**
+1. **Get your Hook-ID** from [tarkov-market.com/pilot](https://tarkov-market.com/pilot)
+2. Enter the Hook-ID in the extension settings (Screenshot Sync → Connection Mode → Hook ID)
+3. **Connect your Screenshots folder**
+4. **Take a screenshot in-game** (default: PrintScreen)
+5. Your position appears on the map (may take a few seconds, based on tarkov-market API response time)!
 
 > 💡 **Tip:** Grant permanent folder access ("Allow on every visit") to avoid re-authorizing after browser restarts.
 
@@ -164,12 +174,12 @@ Please include:
 
 1. **Check the status indicator** on the map (bottom left)
    - 🟢 Green = Connected and working
-   - 🟠 Orange = Hook-ID missing or folder not connected
+   - 🟠 Orange = Configuration incomplete or folder not connected
    - 🔴 Red = Error occurred
 
-2. **Verify your Hook-ID**
-   - Get it from [tarkov-market.com](https://tarkov-market.com) → Account → Settings
-   - Must be a valid UUID format
+2. **Verify your connection mode**
+   - **Desktop App mode:** Ensure the Tarkov Pilot Desktop App is running
+   - **Hook ID mode:** Verify your Hook-ID from [tarkov-market.com/pilot](https://tarkov-market.com/pilot) (must be a valid UUID format)
 
 3. **Reconnect the folder**
    - Click the status indicator on the map, or
