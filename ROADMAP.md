@@ -4,7 +4,7 @@ This document outlines the planned features and improvements for Tarkov Pilot Sy
 
 ---
 
-## ✅ Current Features (v3.0)
+## ✅ Current Features (v3.3)
 
 | Feature | Description |
 |---------|-------------|
@@ -12,29 +12,33 @@ This document outlines the planned features and improvements for Tarkov Pilot Sy
 | 📍 Shared Map Pins | Place markers with CTRL+Click, visible to all teammates |
 | 📋 Quest Tracking | See which quests your teammates have selected |
 | 📸 Screenshot Sync | Auto-detect screenshots and sync position to tarkov-market.com |
+| ⚡ JavaScript API Mode | Fastest sync method using `window.pilot` API |
 | 🖥️ Desktop App Mode | Seamless integration with Tarkov-Market Desktop App Mode |
+| 📋 Game Log Sync | Automatically detect map changes from Tarkov's log files |
 | 📊 Statistics Dashboard | Track your playtime, maps, quests, and teammates |
 | 🔔 Toast Notifications | Get notified when players join, leave, or change maps |
+| 🔊 Sound Notifications | Audio alerts for player join/leave events |
 
 ---
 
 ## 🚀 Planned Features
 
-### Phase 1: Enhanced Automation
+### Phase 1: Enhanced Automation ✅
 
 > Focus: Reduce manual steps and automate common workflows
 
-- [ ] **Game Log Monitoring** - Automatically detect map changes by monitoring Tarkov's log files
-- [ ] **Auto Map Sync** - Automatically switch to the correct map on tarkov-market.com when entering a raid
-- [ ] **Quest Completion Detection** - Get notified when you complete quests in-game
+- [x] **Game Log Monitoring** - Automatically detect map changes by monitoring Tarkov's log files
+- [x] **Auto Map Sync** - Automatically switch to the correct map on tarkov-market.com when entering a raid
+- [x] **Quest Completion Detection** - Get notified when you complete quests in-game
+- [x] **JavaScript API Mode** - Fastest sync method using native tarkov-market.com API
 
-### Phase 2: Audio & Notifications
+### Phase 2: Audio & Notifications ✅
 
 > Focus: Never miss important events
 
-- [ ] **Sound Notifications** - Audio alerts for player join/leave events
+- [x] **Sound Notifications** - Audio alerts for player join/leave events
 - [ ] **Customizable Alert Sounds** - Choose different sounds for different events
-- [ ] **Map Change Audio Cues** - Hear when teammates switch maps
+- [x] **Map Change Audio Cues** - Hear when teammates switch maps
 
 ### Phase 3: Advanced Markers
 

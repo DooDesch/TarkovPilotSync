@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Tarkov Pilot Sync](https://img.shields.io/badge/Tarkov%20Pilot-Sync-f59e0b?style=for-the-badge&logo=googlechrome&logoColor=white)
-![Version](https://img.shields.io/badge/version-3.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-3.3.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-GPL--3.0-green?style=for-the-badge)
 
 **Extends Tarkov Pilot to sync player positions, pins, and quests between multiple users on tarkov-market.com**
@@ -23,6 +23,7 @@ Tarkov Pilot Sync is a Chrome extension that enhances your Escape from Tarkov pl
 - 📋 **Track quests** together with teammates
 - 🔔 **Get notifications** when players join, leave, or change maps
 - 📸 **Screenshot Sync** - Automatically detect in-game screenshots and sync your position to tarkov-market.com
+- 📋 **Game Log Sync** - Automatically detect map changes and quest completions by monitoring Tarkov's logs
 
 ### 📸 Screenshot Sync Feature
 
@@ -30,13 +31,20 @@ The Screenshot Sync feature monitors your Tarkov screenshots folder and automati
 
 #### Connection Modes
 
-**Option A: Desktop App (Recommended)**
+**Option A: JavaScript API (Recommended)** ⚡
+1. **Connect your Screenshots folder** in the extension settings
+2. **Take a screenshot in-game** (default: PrintScreen)
+3. Your position appears on the map instantly!
+
+> 💡 This mode uses the new `window.pilot` JavaScript API from tarkov-market.com for the fastest possible sync. No Hook-ID required!
+
+**Option B: Desktop App (Legacy)**
 1. Verify you're on [Tarkov Pilot Desktop App](https://tarkov-market.com/pilot) Mode
 2. **Connect your Screenshots folder** in the extension settings
 3. **Take a screenshot in-game** (default: PrintScreen)
 4. Your position appears on the map within milliseconds!
 
-**Option B: Hook ID (Manual Setup)**
+**Option C: Hook ID (Slowest)**
 1. **Get your Hook-ID** from [tarkov-market.com/pilot](https://tarkov-market.com/pilot)
 2. Enter the Hook-ID in the extension settings (Screenshot Sync → Connection Mode → Hook ID)
 3. **Connect your Screenshots folder**
@@ -44,6 +52,18 @@ The Screenshot Sync feature monitors your Tarkov screenshots folder and automati
 5. Your position appears on the map (may take a few seconds, based on tarkov-market API response time)!
 
 > 💡 **Tip:** Grant permanent folder access ("Allow on every visit") to avoid re-authorizing after browser restarts.
+
+### 📋 Game Log Sync Feature
+
+Game Log Sync monitors your Tarkov logs folder to automatically detect when you enter a raid - the map on tarkov-market.com switches automatically!
+
+#### Setup
+
+1. **Enable Game Log Sync** in the extension settings
+2. **Connect your Logs folder**: Usually at `%LOCALAPPDATA%\Battlestate Games\EFT\Logs`
+3. **Start a raid** - The map switches automatically!
+
+> ⚠️ **Note:** Game Log Sync requires Screenshot Sync to be in **JavaScript API** or **Desktop App** mode. Hook-ID mode doesn't support log data.
 
 Perfect for coordinating raid strategies with your squad!
 
@@ -96,7 +116,7 @@ What actually happened.
 If applicable, add screenshots to help explain your problem.
 
 ## Environment
-- Extension Version: [e.g., 3.0.0]
+- Extension Version: [e.g., 3.3.0]
 - Browser: [e.g., Chrome 120]
 - OS: [e.g., Windows 11]
 
@@ -178,6 +198,7 @@ Please include:
    - 🔴 Red = Error occurred
 
 2. **Verify your connection mode**
+   - **JavaScript API mode (Recommended):** Just connect your Screenshots folder - no additional setup needed!
    - **Desktop App mode:** Verify your Mode is set to "Desktop App" on [tarkov-market.com/pilot](https://tarkov-market.com/pilot)
    - **Hook ID mode:** Verify your Hook-ID from [tarkov-market.com/pilot](https://tarkov-market.com/pilot) (must be a valid UUID format)
 
@@ -192,6 +213,26 @@ Please include:
 5. **Check the screenshot format**
    - Only `.png` files are detected
    - Filename must match Tarkov's format (contains timestamp)
+
+</details>
+
+<details>
+<summary><b>Game Log Sync not working</b></summary>
+
+1. **Check your Screenshot Sync connection mode**
+   - Game Log Sync only works with **JavaScript API** or **Desktop App** mode
+   - Hook-ID mode doesn't support log data
+
+2. **Verify the logs folder**
+   - Default location: `%LOCALAPPDATA%\Battlestate Games\EFT\Logs`
+   - Make sure you selected the `Logs` folder, not a subfolder
+
+3. **Check if Tarkov is running**
+   - New log folders are created when Tarkov starts
+   - The extension monitors the latest log folder
+
+4. **Grant permanent permission**
+   - Click "Validate Connection" in settings after connecting
 
 </details>
 
