@@ -31,7 +31,7 @@ The Screenshot Sync feature monitors your Tarkov screenshots folder and automati
 #### Connection Modes
 
 **Option A: Desktop App (Recommended)**
-1. Download and run the [Tarkov Pilot Desktop App](https://tarkov-market.com/pilot)
+1. Verify you're on [Tarkov Pilot Desktop App](https://tarkov-market.com/pilot) Mode
 2. **Connect your Screenshots folder** in the extension settings
 3. **Take a screenshot in-game** (default: PrintScreen)
 4. Your position appears on the map within milliseconds!
