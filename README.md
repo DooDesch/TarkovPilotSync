@@ -8,7 +8,7 @@
 
 **Extends Tarkov Pilot to sync player positions, pins, and quests between multiple users on tarkov-market.com**
 
-[Report Bug](#-how-to-report-a-bug) · [Request Feature](https://github.com/DooDesch/TarkovPilotSync/issues/new?labels=enhancement&template=feature_request.md)
+[Report Bug](#-how-to-report-a-bug) · [Request Feature](https://github.com/DooDesch/TarkovPilotSync/issues/new?labels=enhancement&template=feature_request.md) · [Roadmap](ROADMAP.md)
 
 </div>
 
