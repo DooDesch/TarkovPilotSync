@@ -1,5 +1,8 @@
 # 🎯 Tarkov Pilot Sync
 
+> 🛟 **Need help or found a bug?** Get support at [support.doodesch.de](https://support.doodesch.de).
+
+
 <div align="center">
 
 ![Tarkov Pilot Sync](https://img.shields.io/badge/Tarkov%20Pilot-Sync-f59e0b?style=for-the-badge&logo=googlechrome&logoColor=white)
@@ -255,4 +258,3 @@ Made with ❤️ for the Tarkov community
 **[DooDesch](https://github.com/DooDesch)**
 
 </div>
-
