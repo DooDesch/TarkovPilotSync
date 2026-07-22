@@ -1,6 +1,6 @@
 # 🎯 Tarkov Pilot Sync
 
-> 🛟 **Need help or found a bug?** Get support at [support.doodesch.de](https://support.doodesch.de).
+> 🛟 **Need help or found a bug?** Get support at [support.doodesch.de/tarkovpilotsync](https://support.doodesch.de/tarkovpilotsync).
 
 
 <div align="center">
